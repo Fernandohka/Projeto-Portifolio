@@ -9,7 +9,7 @@ a {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #e8e8e8;
     width: 100vw;
     height: 100vh;
@@ -64,6 +64,9 @@ body {
     background-color: #E6F0FA;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .experiencia {
@@ -71,6 +74,9 @@ body {
     background-color: #E6F0FA;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 footer {
@@ -79,21 +85,31 @@ footer {
     bottom: 0;
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     border: 0px;
     border-top: 2px;
     border-style: solid;
 }
 
 .cttCard {
+    padding: 5px;
     display: flex;
     align-items: center;
     gap: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: #E6F0FA;
+    border-radius: 5px;
+}
+
+.cttCard:hover {
+    background-color: #b1d8ff;
+    border-color: black;
 }
 
 .cttCards {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     padding: 5px;
 
     img {
@@ -106,5 +122,14 @@ footer {
 }
 
 p {
-    font-size: large;
+    font-size: 26px;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+h2 {
+    font-size: 35px;
 }
